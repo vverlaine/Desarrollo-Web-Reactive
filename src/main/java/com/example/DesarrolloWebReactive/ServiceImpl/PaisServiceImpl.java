@@ -61,18 +61,4 @@ public class PaisServiceImpl implements PaisService {
         }
         return null;
     }
-
-        /*Long num = paisNew.getId();
-        if (paisRepository.findById(num) != null) {
-            Pais paisToUpdate = new Pais();
-            paisToUpdate.setId(paisNew.getId());
-            paisToUpdate.setPais(paisNew.getPais());
-            paisToUpdate.setObservacion(paisNew.getObservacion());
-            paisRepository.save(paisToUpdate);
-            return "País Modificado correctamente";
-        }
-        return "Error... Al modificar País";
-
-         */
-
 }
