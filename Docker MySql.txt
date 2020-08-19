@@ -1,1 +1,1 @@
-run --name=cine2_mysqldb -d -p 3306:3306 -e MYSQL_ROOT_HOST=% -e MYSQL_ROOT_PASSWORD=root -e MYSQL_USER=Admin -e MYSQL_PASSWORD=1234 -e MYSQL_DATABASE=CINE mysql/mysql-server:5.7
+run --name=cine2_mysqldb -d -p 3306:3306 -e MYSQL_ROOT_HOST=% -e MYSQL_ROOT_PASSWORD=root -e MYSQL_USER=Admin -e MYSQL_PASSWORD=1234 -e MYSQL_DATABASE=cine mysql/mysql-server:5.7
