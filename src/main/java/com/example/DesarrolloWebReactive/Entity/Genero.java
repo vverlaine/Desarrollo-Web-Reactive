@@ -5,34 +5,34 @@ import org.springframework.data.annotation.Id;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "pais")
-public class Pais {
+@Table(name = "genero")
+public class Genero {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "ID")
-    Long id;
+    @Column(name = "id")
+    long id;
 
-    @Column(name = "PAIS")
-    String pais;
+    @Column(name = "genero")
+    String genero;
 
-    @Column(name = "OBSERVACION")
+    @Column(name = "observacion")
     String observacion;
 
-    public Long getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 
-    public String getPais() {
-        return pais;
+    public String getGenero() {
+        return genero;
     }
 
-    public void setPais(String pais) {
-        this.pais = pais;
+    public void setGenero(String genero) {
+        this.genero = genero;
     }
 
     public String getObservacion() {
@@ -43,17 +43,17 @@ public class Pais {
         this.observacion = observacion;
     }
 
-    public Pais() {
+    public Genero() {
     }
 
-    public Pais(String pais, String observacion) {
-        this.pais = pais;
+    public Genero(String genero, String observacion) {
+        this.genero = genero;
         this.observacion = observacion;
     }
 
-    public Pais(Long id, String pais, String observacion) {
+    public Genero(long id, String genero, String observacion) {
         this.id = id;
-        this.pais = pais;
+        this.genero = genero;
         this.observacion = observacion;
     }
 }
