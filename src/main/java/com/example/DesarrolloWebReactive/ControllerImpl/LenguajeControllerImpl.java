@@ -9,12 +9,13 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @RestController
+@RequestMapping("/pelicula")
 public class LenguajeControllerImpl implements LenguajeController {
 
     @Autowired
     LenguajeService lenguajeService;
 
-    @GetMapping(value = "/lenguaje", produces = "application/json")
+    @GetMapping(value = "/lenguaje/all", produces = "application/json")
     @Override
     public Flux<Lenguaje> findAllLenguaje() {
         return lenguajeService.findAllLenguaje();

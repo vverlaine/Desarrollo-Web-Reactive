@@ -9,12 +9,13 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @RestController
+@RequestMapping("/pelicula")
 public class GeneroControllerImpl implements GeneroController {
 
     @Autowired
     GeneroService generoService;
 
-    @GetMapping(value = "/genero", produces = "application/json")
+    @GetMapping(value = "/genero/all", produces = "application/json")
     @Override
     public Flux<Genero> findAllGenero() {
         return generoService.findAllGenero();

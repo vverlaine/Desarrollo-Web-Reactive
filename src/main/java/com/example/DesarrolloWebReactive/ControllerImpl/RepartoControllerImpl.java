@@ -9,6 +9,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 @RestController
+@RequestMapping("/pelicula")
 public class RepartoControllerImpl implements RepartoController {
 
     @Autowired
